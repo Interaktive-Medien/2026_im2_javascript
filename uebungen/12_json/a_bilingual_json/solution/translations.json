@@ -1,0 +1,22 @@
+{
+  "de": {
+    "name": "Deutsch",
+    "title": "Willkommen in Biel",
+    "description": "Schön hast du den Weg in unsere wunderschöne Stadt gefunden"
+  },
+  "fr": {
+    "name": "Français",
+    "title": "Bienvenue à Bienne",
+    "description": "Nous sommes heureux que vous ayez trouvé le chemin de notre magnifique ville"
+  },
+  "en": {
+    "name": "English",
+    "title": "Welcome to Biel",
+    "description": "We're glad you found your way to our beautiful city"
+  },
+  "es": {
+    "name": "Español",
+    "title": "Bienvenido a Biel",
+    "description": "Estamos contentos de que hayas encontrado el camino a nuestra hermosa ciudad"
+  }
+}

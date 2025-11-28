@@ -1,0 +1,77 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html[data-theme='light'] {
+    --text: #201f1f;
+    --background: #ffffff;
+    --accent: #44dd44;
+}
+html[data-theme='dark'] {
+    --text: #e4e0e0;
+    --background: #201f1f;
+    --accent: #307730;
+}
+
+main {
+    width: 100vw;
+    height: 100dvh;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    padding: 40px;
+}
+
+#toggle {
+    appearance: none;
+    position: fixed;
+    top: 0;
+    right: 40px;
+    cursor: pointer;
+    background: var(--accent);
+    border: none;
+    color: var(--text);
+    padding: 8px 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: padding-top ease 333ms;
+    font-size: 1.1rem;
+}
+#toggle:hover {
+    padding-top: 12px;
+}
+[data-theme='light'] #toggle::after {
+    content: '🌚 darkmode aktivieren';
+}
+[data-theme='dark'] #toggle::after {
+    content: '🌞 lightmode aktivieren';
+}
+
+
+.content {
+    max-width: 640px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.content > h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--text);
+    text-wrap: balance;
+}
+.content > p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 130%;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#flags > img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+#flags > img:hover {
+    transform: scale(1.1);
+}
+#country {
+    font-size: 3.2rem;
+}
+
+#overview {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid black;
+    display: flex;
+}
+#overview > * {
+    width: 100%;
+}
+#overview > span:not(:last-of-type) {
+    border-right: 1px solid black;
+}
+#overview > span[data-state="success"] {
+    background-color: #5c9e31;
+}
+#overview > span[data-state="fail"] {
+    background-color: #d22f27;
+}
