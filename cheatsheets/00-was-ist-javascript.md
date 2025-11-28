@@ -5,7 +5,7 @@
 - JavaScript-Dateien enden mit `.js`
 - JavaScript-Dateien werden am Ende eines HTML-Dokuments eingebunden
 ```html
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 ```
 - JavaScript ist **nicht** dasselbe wie Java
 
