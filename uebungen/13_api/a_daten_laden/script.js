@@ -7,7 +7,7 @@
 * aus (https://www.freepublicapis.com/tags/im2).
 *
 * Probiere dann, mit der Hilfe des Cheatsheets zu API's
-* und AI eine funktion zu schreiben, die beim Klick auf den
+* und AI eine Funktion zu schreiben, die beim Klick auf den
 * Button Daten von der API lädt und einfach in der Konsole
 * ausgibt.
 * */
