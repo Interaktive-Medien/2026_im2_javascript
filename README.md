@@ -24,7 +24,7 @@ Der krönende Abschluss - wir werden in diesem Teil mit JavaScript externe Daten
 Du findest in diesem Repository verschiedenes Material, welches du im Unterricht (und auch später) brauchen kannst. 
 
 ### 2.1 📕 Theorie
-Die Folien mit der Theorie findet ihr auf Moodle oder unter diesem [Link](https://moodle.fhgr.ch/mod/resource/view.php?id=830708). 
+Die Folien mit der Theorie findet ihr auf Moodle oder unter diesem [Link](https://moodle.fhgr.ch/mod/resource/view.php?id=830708). <!-- // todo: replace link -->
 
 ### 2.2 🧠 Cheatsheets
 Zu allen besprochenen Themen findest du sogenannte Cheatsheets. Es werden dort die Grundprinzipien erklärt und meist mit einfachen Beispielen veranschaulicht. Ausserdem findest du in den Cheatsheets Links zu weiteren Informationen zum Thema.
