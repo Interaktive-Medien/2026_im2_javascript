@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Einkaufsliste</title>
+</head>
+<body>
+<main>
+    <section class="content">
+        <h1><span>🥦</span>Einkaufsliste</h1>
+        <ul id="list">
+            <li><span>Brot</span><span data-value="Brot">gekauft ✅</span></li>
+        </ul>
+    </section>
+    <input id="add" list="known-products" type="text" aria-label="Eintrag hinzufügen" placeholder="Zutat eingeben">
+    <datalist id="known-products">
+        <option value="Brot"></option>
+    </datalist>
+</main>
+<script src="script.js" type="module"></script>
+</body>
+</html>
