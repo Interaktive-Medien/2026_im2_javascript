@@ -1,0 +1,69 @@
+/*--- snippet 1 ---*/
+// 221B: Holmes notiert das Alter eines Zeugen.
+const age = '12';
+console.log(age + 1);
+
+/*--- snippet 2 ---*/
+// Vor der Tür steht Watson.
+var companion = "Watson";
+companion = companion.toUpperCase();
+
+/*--- snippet 3 ---*/
+// Ist der Fall gelöst?
+let solved = false;
+if (solved = i) {
+    console.log("Case closed.");
+}
+
+/*--- snippet 4 ---*/
+// Feste Anzahl Indizien?
+const evidenceCount = 3;
+evidenceCount = 4;
+
+/*--- snippet 5 ---*/
+// Liste der Verdächtigen
+let suspects = { "Moriarty", "Irene", "Watson" };
+console.log(suspects.length);
+
+/*--- snippet 6 ---*/
+// Codenamen erzeugen
+function getCodename(name, level) {
+    return name.toUpperCase() + " #" + level.toString();
+}
+const code = getCodename();
+
+/*--- snippet 7 ---*/
+// Punkte berechnen
+function score(points) {
+    const bonus = 5;
+    points + bonus;
+}
+const total = score(10) + 1;
+
+/*--- snippet 8 ---*/
+// Hinweis protokollieren
+function logClue(text) {
+    console.log("CLUE:", text)
+
+/*--- snippet 9 ---*/
+// Ist die Spur heiß?
+const temperature = 30;
+const state = temperature > 25 ? "hot" ;
+
+/*--- snippet 10 ---*/
+// Verdächtige ermitteln
+const suspects = { prime: "Moriarty", second: "Irene" };
+const first = suspects[0];
+console.log(first);
+
+/*--- snippet 11 ---*/
+// Dossier lesen
+const dossier = {
+    name: "Dr. Watson",
+    const rank: "Assistant"
+};
+
+/*--- snippet 12 ---*/
+/ Jahr der Ermittlungen
+const year = 1895;
+console.log(`Ermittlungen im Jahre ${year}`);
