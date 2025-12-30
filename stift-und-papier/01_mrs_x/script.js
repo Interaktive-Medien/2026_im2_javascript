@@ -35,7 +35,7 @@ x = add(x, a);
 if (add(x,x) >= double(x)) {
     x = x / 10;
 } else {
-    x = 3;
+    x = 5;
 }
 x = x > Math.PI ? 'Haus Tomate' : 'Butter Haus Minze';
 x = x.replace('Haus', 'JavaScript');
