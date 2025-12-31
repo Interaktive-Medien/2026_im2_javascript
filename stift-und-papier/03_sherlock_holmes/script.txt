@@ -11,7 +11,7 @@ companion = companion.toUpperCase();
 /*--- snippet 3 ---*/
 // Ist der Fall gelöst?
 let solved = false;
-if (solved = i) {
+if (solved = true) {
     console.log("Case closed.");
 }
 
