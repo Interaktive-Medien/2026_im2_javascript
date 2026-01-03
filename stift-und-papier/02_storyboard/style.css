@@ -4,21 +4,54 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 html[data-theme="boring"] {
-    --bg: #f1f1f1;
+    --bg: #ffffff;
     --text: #000000;
     --accent: #9cdbff;
+    --accent-2: #ffe24a;
 }
 html[data-theme="fun"] {
-    --bg: #d46bff;
-    --text: #8033ff;
+    --bg: #a800ff;
+    --text: #d0b5ff;
     --accent: #ffe237;
+    --accent-2: #00ff04;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#form {
+    background: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    width: 1000px;
+    input {
+        width: 100%;
+        &.input {
+            padding: 5px;
+        }
+    }
+    button {
+        background: var(--accent);
+        flex-shrink: 0;
+        border: none;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+}
+
+#viewport {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
     background: var(--bg);
     overflow: clip;
     display: flex;
@@ -26,58 +59,26 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.square {
     position: relative;
-}
-#text {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    font-size: 3rem;
-    color: var(--accent);
-}
-#formular {
-    position: relative;
-    background: var(--accent);
-    padding: 10px 80px;
-    width: 480px;
-    height: 480px;
-    border-radius: 9999px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition: all 600ms ease-in-out
-}
-#container_name {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 9999px;
+    width: 60px;
+    height: 60px;
     background: var(--accent);
 }
-.input {
-    width: 100%;
-    padding: 5px 10px;
-    height: 40px;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--text);
-}
-.button {
-    border: none;
-    background: var(--text);
-    color: var(--bg);
-    padding: 10px 20px;
+.text {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 1.5rem;
     font-weight: bold;
-    width: 100%;
-    height: 40px;
-    transition: all 200ms ease-in-out;
+    color: var(--bg);
+}
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+    background: var(--accent);
 }
 
 .hidden {
@@ -85,7 +86,7 @@ body {
     pointer-events: none;
 }
 .big {
-    transform: scale(1.5);
+    transform: scale(4);
 }
 .blurred {
     filter: blur(30px);
@@ -93,4 +94,7 @@ body {
 .disabled {
     opacity: 0.2;
     pointer-events: none;
+}
+.colored {
+    background-color: var(--accent-2);
 }

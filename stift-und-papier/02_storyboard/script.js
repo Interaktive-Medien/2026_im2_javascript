@@ -1,40 +1,31 @@
-const body = document.querySelector('body');
-const form = document.querySelector('#formular');
-const input = form.querySelector('#input');
-const button = form.querySelector('#button');
-const text = document.querySelector('#text');
+const viewport = document.querySelector('#viewport');
+const square = viewport.querySelector('#square');
+const input_number = document.querySelector('#input_number');
+const input_text = document.querySelector('#input_text');
+const input_range = document.querySelector('#input_range');
+const text_container = document.querySelector('#text');
+const button = document.querySelector('#button');
 
 // schritt 1
-body.style.backgroundColor = 'blue';
+viewport.style.backgroundColor = 'blue';
 
 // schritt 2
-button.classList.add('disabled');
+square.classList.add('colored');
 
 // schritt 3
-input.addEventListener('input', function () {
-    if (input.value.length >= 5) {
-        if (input.value.length > 5) {
-            body.style.backgroundColor = 'green';
-        } else {
-            body.style.backgroundColor = 'yellow';
-        }
-        button.classList.remove('disabled');
-    } else {
-        body.style.backgroundColor = 'red';
-        button.classList.add('disabled');
-    }
+button.addEventListener('click', function() {
+    const factor = parseInt(input_number.value);
+    square.style.width = `${square.clientWidth * factor}px`;
+    square.style.height = `${square.clientHeight * factor}px`;
 })
 
 // schritt 4
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const p = document.createElement('p');
-    p.innerText = input.value.toUpperCase();
-    text.appendChild(p);
+input_text.addEventListener('input', function() {
+    text_container.innerHTML += `${input_text.value}<br>`;
 })
 
 // schritt 5
-form.remove();
+square.remove();
 
 // schritt 6
 function create_circle(color) {
@@ -43,7 +34,7 @@ function create_circle(color) {
     if (color) {
         circle.style.backgroundColor = color;
     }
-    body.appendChild(circle);
+    viewport.appendChild(circle);
 }
 create_circle('yellow');
 create_circle();
@@ -56,6 +47,13 @@ circle_3.classList.add('blurred');
 
 // schritt 8
 const circle_1 = circles[0];
+input_range.addEventListener('input', function() {
+    let value = input_range.value;
+    value = value * -1;
+    circle_1.style.transform = `translateX(${value}px)`;
+})
+
+// schritt 9
 const circle_2 = circles[1];
 setTimeout(() => {
     circle_3.remove();
@@ -67,23 +65,11 @@ setTimeout(() => {
     }, 2000)
 }, 1500)
 
-// schritt 9
-form.classList.add('big');
-body.appendChild(form);
-
 // schritt 10
-const html = body.parentElement;
-body.style.backgroundColor = '';
-html.dataset.theme = 'fun';
+square.classList.add('big');
+viewport.appendChild(square);
 
 // schritt 11
-const saved_name = localStorage.getItem('saved_name');
-const container = document.createElement('p');
-if (saved_name) {
-    container.innerText = saved_name;
-} else {
-    const entered_name = prompt('Bitte gib deinen Namen ein');
-    container.innerText = entered_name;
-    localStorage.setItem('saved_name', entered_name);
-}
-text.appendChild(container);
+const html = document.querySelector('html');
+viewport.style.backgroundColor = '';
+html.dataset.theme = 'fun';

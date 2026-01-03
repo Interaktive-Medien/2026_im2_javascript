@@ -8,11 +8,16 @@
     <title>Storyboard</title>
 </head>
 <body>
-<div id="text"></div>
-<form id="formular">
-    <input class="input" type="text" name="input" id="input" placeholder="Text">
-    <button class="button" id="button">Los!</button>
+<form id="form">
+    <input class="input" type="text" name="input_text" id="input_text" placeholder="Text eingeben" aria-label="Text">
+    <input class="input" type="number" name="input_number" id="input_number" placeholder="Anzahl eingeben" min="0" max="200" aria-label="Anzahl">
+    <input class="range" type="range" name="input_range" id="input_range" min="0" max="150" step="1" value="0" aria-label="Range-Slider">
+    <button class="button" id="button" type="button">Mach was!</button>
 </form>
+<div id="viewport">
+    <div class="square" id="square"></div>
+    <p class="text" id="text"></p>
+</div>
 <script src="script.js" type="module"></script>
 </body>
 </html>
