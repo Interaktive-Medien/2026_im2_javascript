@@ -1,5 +1,5 @@
-const viewport = document.querySelector('#viewport');
-const square = viewport.querySelector('#square');
+const box = document.querySelector('#box');
+const square = box.querySelector('#square');
 const input_number = document.querySelector('#input_number');
 const input_text = document.querySelector('#input_text');
 const input_range = document.querySelector('#input_range');
@@ -7,7 +7,7 @@ const text_container = document.querySelector('#text');
 const button = document.querySelector('#button');
 
 // schritt 1
-viewport.style.backgroundColor = 'blue';
+box.style.backgroundColor = 'blue';
 
 // schritt 2
 square.classList.add('colored');
@@ -34,7 +34,7 @@ function create_circle(color) {
     if (color) {
         circle.style.backgroundColor = color;
     }
-    viewport.appendChild(circle);
+    box.appendChild(circle);
 }
 create_circle('yellow');
 create_circle();
@@ -67,9 +67,9 @@ setTimeout(() => {
 
 // schritt 10
 square.classList.add('big');
-viewport.appendChild(square);
+box.appendChild(square);
 
 // schritt 11
 const html = document.querySelector('html');
-viewport.style.backgroundColor = '';
+box.style.backgroundColor = '';
 html.dataset.theme = 'fun';
