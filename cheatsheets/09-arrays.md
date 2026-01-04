@@ -61,14 +61,14 @@ const wgs = [...wg_bern, ...wg_chur]; // Macht genau das selbe, mit dieser Varia
 ```
 
 ## Weitere Array Methoden
-### sort
+### toSorted
 Wird gebraucht, um Arrays zu sortieren.
 ```javascript
 const numbers = [4, 5 -10, 100, 31];
-numbers.sort((a, b) => a - b) // Sortiert die Zahlen von tief nach hoch
-numbers.sort((a, b) => b - a) // Sortiert die Zahlen von hoch nach tief
+const numbers_desc = numbers.toSorted((a, b) => a - b) // Sortiert die Zahlen von tief nach hoch
+const numbers_asc = numbers.toSorted((a, b) => b - a) // Sortiert die Zahlen von hoch nach tief
 const food = ['Toast','Bread','Banana','Ananas'];
-food.sort() // Sortiert die Lebensmittel alphabetisch
+const food_alphabetical = food.toSorted() // Sortiert die Lebensmittel alphabetisch
 ```
 
 ### map
