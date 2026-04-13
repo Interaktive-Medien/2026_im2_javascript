@@ -106,8 +106,10 @@ image.setAttribute('alt', 'Bild eines Brotes')
 ```javascript
 // Container laden, in den das Element platziert werden soll
 const body = document.querySelector('body');
-// Element in diesen Container rein laden
+// Element in diesen Container rein laden (am Ende)
 body.appendChild(image)
+// Element in den Container laden (am Anfang)
+body.prepend(image)
 ```
 
 ### Elemente erstellen (einfacher Weg)
