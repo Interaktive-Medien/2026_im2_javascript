@@ -1,6 +1,6 @@
 # Ablauf `Endlich verbunden!`
 
-> **Ziele**: JS verknüpfen, Zusammenhang HTML & JS, Dev-Tools kennenlernen, console.log() kennen
+> **Ziele**: JS verknüpfen, den Zusammenhang zwischen HTML & JS kennenlernen, Dev-Tools kennenlernen, console.log() selber probieren.
 
 1. HTML & CSS gemeinsam anschauen
 2. CSS verknüpfen mit `<link rel="stylesheet" type="text/css" href="style.css">`

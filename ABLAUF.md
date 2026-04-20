@@ -4,20 +4,20 @@
 
 ## Tagesstrukturen
 > Nicht jeden Tag wird ein neuer Themenblock behandelt. Es wird einfach so an den Themen gearbeitet, dass man in der zur Verfügung stehenden Zeit mit allem durchkommt. In Chur & Bern sind das **5** Tage, in Zürich **3.5** Tage.
-1. **Repetition**: Ausser am ersten Tag gibt es immer zum Start des Tages eine kleine Repetition der Themen vom Vortag. In welcher Form diese erfolgt, ist den Dozierenden vor Ort überlassen.
-2. **Weiterarbeit**: Es wird dann weiter nach dem Ablaufplan gearbeitet. Es ergibt eventuell Sinn, nicht mit einer Übung in den Tag zu starten, sondern mit etwas Interaktivem (Theorie oder Code-Along).
+1. **Repetition**: Ausser am ersten Tag gibt es wenn möglich immer zum Start des Tages eine kleine Repetition der Themen vom Vortag. In welcher Form diese erfolgt, ist den Dozierenden vor Ort überlassen.
+2. **Weiterarbeit**: Es wird dann wenn möglich weiter nach dem Ablaufplan gearbeitet. Es ergibt eventuell Sinn, nicht mit einer Übung in den Tag zu starten, sondern mit etwas Interaktivem (Theorie oder Code-Along).
 3. **Übungen**: Es wäre gut, wenn jeden Tag (in Chur & Bern) mindestens eine Übung mit den Studierenden gemacht wird – so lernen Sie selbständig an Code-Problemen zu arbeiten. Wann diese stattfindet, ist egal.
 4. **Stift & Papier**: Es wäre super, wenn im Unterricht alle 5 Stift-und-Papier-Aufgaben gemacht würden – die tragen dazu bei, dass die Studierenden lernen, ohne AI/KI-Tools zu arbeiten & den Code besser zu verstehen.
 
 ## Thematischer Ablauf
-### A. Introduction into Programming
-> Was ist JavaScript, Variablen, Typen, Bedingungen, Funktionen
+### A. Einführung in die Programmierung
+> Was ist JavaScript, Variablen, Typen, Bedingungen, Funktionen, Debugging
 
 #### 🏔️ Chur und 🧸 Bern
 1. `📕` Theorie `50'`
 2. `🧑🏽‍🏫` Code-Along [00_endlich_verbunden](code-alongs/00_endlich_verbunden) `20'`
 3. `🧑🏽‍🏫` Code-Along [01_passwort_checker](code-alongs/01_passwort_checker) `35'`
-4. `💻` Digitale Übung [01b_taktfahrplan](uebungen/01_variablen/b_taktfahrplan) `30'`
+4. `💻` Digitale Übung [01b_taktfahrplan](uebungen/01_variablen/b_taktfahrplan) `20'`
 5. `💻` Digitale Übung [04a_tuersteher](uebungen/04_bedingungen/a_tuersteher) `30'`
 6. `📝` Analoge Übung [01_mrs_x](stift-und-papier/01_mrs_x) `35'`
 

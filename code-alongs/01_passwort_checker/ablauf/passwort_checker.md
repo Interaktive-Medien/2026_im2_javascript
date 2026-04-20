@@ -1,10 +1,10 @@
 # Ablauf `Passwort Checker`
 
-> **Ziele**: Prompts kennenlernen, Funktionen schreiben, Bedingungen anwenden, AI gekonnt nutzen (optional)
+> **Ziele**: Funktionen schreiben, Bedingungen anwenden, AI gekonnt nutzen (optional)
 
 1. In der Klasse definieren, was ein gutes Passwort ausmacht (wir suchen va. nach der Länge). _Am Schluss soll es darauf hinauslaufen, dass wir beschliessen, dass wir initial nur auf die Länge des Passwortes testen_
 2. In der Klasse planen, wie die Funktion geschrieben werden soll
-3. Variabel `password` initial als normaler String aufsetzen (noch ohne Prompt).
+3. Variabel `password` initial als normaler String aufsetzen (noch ohne JS-prompt-Eingabefeld).
 4. Funktion deklarieren (Grundgerüst aufbauen)
 5. Anweisung schreiben, die auf die Länge prüft
 6. `console.log` Nachrichten schreiben für beide Bedingungen (wenn Passwort gut und wenn Passwort schlecht)
@@ -13,7 +13,7 @@
 
 ### Optionale Ergänzung
 
-> Diese Ergänzung nur durchführen, wenn die Studierenden motiviert sind und Lust darauf haben. Ansonsten könnte es mehr verwirren als etwas bringen. Anhand dieser Ergänzung kann die (korrekte) Arbeit mit AI-Tools gezeigt werden.
+> Diese Ergänzung nur durchführen, wenn die Studierenden motiviert sind und Lust darauf haben. Ansonsten könnte es mehr verwirren, als etwas bringen. Anhand dieser Ergänzung kann die (korrekte) Arbeit mit AI-Tools gezeigt werden.
 
 9. Das Passwort soll nun auch noch darauf geprüft werden, ob es mind. eine Zahl beinhaltet. Funktion mit **AI** erweitern. Hier dann auch gleich Zeigen, wie man so etwas schlau "promptet". 
 
